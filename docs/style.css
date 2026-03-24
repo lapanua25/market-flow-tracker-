@@ -77,3 +77,25 @@ header p { color: var(--text-secondary); font-size: 1.1rem; margin-top: 0.2rem; 
 #analysis-list li { background: rgba(255, 255, 255, 0.03); padding: 1.2rem; border-radius: 12px; border-left: 4px solid var(--accent-blue); line-height: 1.6; font-size: 1.05rem; }
 .loading-overlay { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh; gap: 1.5rem; }
 .spinner { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.1); border-top-color: var(--accent-blue); border-radius: 50%; animation: rotate 1s linear infinite; }
+
+.timeframe-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.tf-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    transition: all 0.2s;
+}
+.tf-btn:hover { background: rgba(255, 255, 255, 0.1); }
+.tf-btn.active {
+    background: var(--accent-blue);
+    color: white;
+    border-color: var(--accent-blue);
+}
