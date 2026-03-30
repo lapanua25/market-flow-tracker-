@@ -88,7 +88,7 @@ def generate_static_files():
             if len(s_slice) > 0:
                 normalized_df[name] = s_slice / s_slice.iloc[0] * 100
 
-        plt.style.use('dark_background')
+        plt.style.use('default')
         plt.figure(figsize=(10, 5))
         if tf_key == '1D':
             plot_df = close_df_reindexed[close_df_reindexed.index >= last_date - pd.Timedelta(days=7)]
@@ -98,22 +98,22 @@ def generate_static_files():
                 if len(s)>0: norm_plot_df[col] = s / s.iloc[0] * 100
             for col in norm_plot_df.columns:
                 plt.plot(norm_plot_df.index, norm_plot_df[col], label=col, linewidth=2)
-            plt.title('直近1週間の推移 (1Dリターン選択中)', color='white')
+            plt.title('直近1週間の推移 (1Dリターン選択中)', color='#1e293b', fontweight='bold')
         else:
             for col in normalized_df.columns:
                 plt.plot(normalized_df.index, normalized_df[col], label=col, linewidth=2)
-            plt.title(f'{tf_info["label"]}の騰落比較 (起点=100)', color='white')
+            plt.title(f'{tf_info["label"]}の騰落比較 (起点=100)', color='#1e293b', fontweight='bold')
 
-        plt.legend(facecolor='#1e1e24', edgecolor='none', labelcolor='white')
-        plt.grid(color='#333333', linestyle='--', linewidth=0.5)
+        plt.legend(facecolor='#ffffff', edgecolor='#e2e8f0', labelcolor='#1e293b')
+        plt.grid(color='#cbd5e1', linestyle='--', linewidth=0.5)
         ax = plt.gca()
-        ax.set_facecolor('#0d0d12')
-        plt.gcf().patch.set_facecolor('#0d0d12')
+        ax.set_facecolor('#ffffff')
+        plt.gcf().patch.set_facecolor('#ffffff')
         plt.tight_layout()
 
         image_filename = f'chart_{tf_key}.png'
         image_path = os.path.join(docs_dir, image_filename)
-        plt.savefig(image_path, facecolor='#0d0d12', transparent=True)
+        plt.savefig(image_path, facecolor='#ffffff', transparent=True)
         plt.close()
         
         all_data[tf_key] = {
