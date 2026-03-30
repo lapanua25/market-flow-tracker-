@@ -24,8 +24,19 @@ SYMBOLS = {
     'ビットコイン': 'BTC-USD'
 }
 
+import requests
+
 def fetch_and_calculate():
-    df = yf.download(list(SYMBOLS.values()), period="1y", interval="1d")
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    })
+    
+    df = yf.download(list(SYMBOLS.values()), period="1y", interval="1d", session=session)
+    
+    if df is None or df.empty:
+        raise Exception("大変申し訳ありません。現在Yahooのサーバー側で無料クラウドからの通信が一時的にブロックされています。")
+        
     if isinstance(df.columns, pd.MultiIndex):
         close_df = df.xs('Close', level='Price', axis=1) if 'Price' in df.columns.names else df['Close']
     else:
