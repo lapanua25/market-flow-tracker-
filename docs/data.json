@@ -5,16 +5,10 @@
       "1D": {
         "stats": [
           {
-            "name": "原油",
-            "current_price": 88.91999816894531,
-            "return_rate": 0.20284010537403585,
-            "position_1y": 58.33911192545996
-          },
-          {
             "name": "ゴールド",
-            "current_price": 3887.60009765625,
-            "return_rate": 0.05919874396365099,
-            "position_1y": 0.1604946663334456
+            "current_price": 3886.300048828125,
+            "return_rate": 0.025738037923273005,
+            "position_1y": 0.06977880833263912
           },
           {
             "name": "日経平均",
@@ -42,26 +36,20 @@
           },
           {
             "name": "ビットコイン",
-            "current_price": 67015.40625,
-            "return_rate": -6.065857050559032,
-            "position_1y": 22.039206583839295
+            "current_price": 65079.0390625,
+            "return_rate": -4.645081500982096,
+            "position_1y": 16.992702721412545
           }
         ],
-        "image_url": "./chart_1D.png?t=1794632399"
+        "image_url": "./chart_1D.png?t=1794718444"
       },
       "1W": {
         "stats": [
           {
-            "name": "原油",
-            "current_price": 88.91999816894531,
-            "return_rate": -2.102833451068309,
-            "position_1y": 58.33911192545996
-          },
-          {
             "name": "ゴールド",
-            "current_price": 3887.60009765625,
-            "return_rate": -4.596427131370051,
-            "position_1y": 0.1604946663334456
+            "current_price": 3886.300048828125,
+            "return_rate": -4.628330953777504,
+            "position_1y": 0.06977880833263912
           },
           {
             "name": "日経平均",
@@ -89,73 +77,61 @@
           },
           {
             "name": "ビットコイン",
-            "current_price": 67015.40625,
-            "return_rate": -11.527988209193985,
-            "position_1y": 22.039206583839295
+            "current_price": 65079.0390625,
+            "return_rate": -12.744726393616313,
+            "position_1y": 16.992702721412545
           }
         ],
-        "image_url": "./chart_1W.png?t=1794632399"
+        "image_url": "./chart_1W.png?t=1794718444"
       },
       "1M": {
         "stats": [
           {
-            "name": "原油",
-            "current_price": 88.91999816894531,
-            "return_rate": -6.488588081359248,
-            "position_1y": 58.33911192545996
-          },
-          {
             "name": "ゴールド",
-            "current_price": 3887.60009765625,
-            "return_rate": -5.362832832460418,
-            "position_1y": 0.1604946663334456
+            "current_price": 3886.300048828125,
+            "return_rate": -6.805593203569171,
+            "position_1y": 0.06977880833263912
           },
           {
             "name": "日経平均",
             "current_price": 61142.3515625,
-            "return_rate": -9.745378675255035,
+            "return_rate": -5.096700469403981,
             "position_1y": 52.89705978541779
           },
           {
             "name": "日経平均先物",
             "current_price": 61065.0,
-            "return_rate": -8.145306859205782,
+            "return_rate": -6.742516799022602,
             "position_1y": 51.839671120246656
           },
           {
             "name": "S&P 500",
             "current_price": 7561.669921875,
-            "return_rate": -2.037456188609732,
+            "return_rate": -2.3552262681169167,
             "position_1y": 82.56110921710695
           },
           {
             "name": "米ドル/円",
             "current_price": 159.875,
-            "return_rate": 0.9809083471322921,
+            "return_rate": 1.2142540429893378,
             "position_1y": 65.04250291844012
           },
           {
             "name": "ビットコイン",
-            "current_price": 67015.40625,
-            "return_rate": -17.835509371217373,
-            "position_1y": 22.039206583839295
+            "current_price": 65079.0390625,
+            "return_rate": -20.771997089244,
+            "position_1y": 16.992702721412545
           }
         ],
-        "image_url": "./chart_1M.png?t=1794632399"
+        "image_url": "./chart_1M.png?t=1794718444"
       },
       "1Y": {
         "stats": [
           {
-            "name": "原油",
-            "current_price": 88.91999816894531,
-            "return_rate": 47.97802952762316,
-            "position_1y": 58.33911192545996
-          },
-          {
             "name": "ゴールド",
-            "current_price": 3887.60009765625,
-            "return_rate": -5.046159346870449,
-            "position_1y": 0.1604946663334456
+            "current_price": 3886.300048828125,
+            "return_rate": -5.077912774734983,
+            "position_1y": 0.06977880833263912
           },
           {
             "name": "日経平均",
@@ -183,12 +159,12 @@
           },
           {
             "name": "ビットコイン",
-            "current_price": 67015.40625,
-            "return_rate": -29.007440835685617,
-            "position_1y": 22.039206583839295
+            "current_price": 65079.0390625,
+            "return_rate": -31.88946199235979,
+            "position_1y": 16.992702721412545
           }
         ],
-        "image_url": "./chart_1Y.png?t=1794632399"
+        "image_url": "./chart_1Y.png?t=1794718445"
       }
     },
     "analysis": [
@@ -196,6 +172,6 @@
       "実物資産（ゴールド・原油）などの安全資産へのシフトが顕著。",
       "ドル高円安の進行から、米国株よりも日本株に資金が流入しやすい環境を形成。"
     ],
-    "last_updated": "2026-11-14 04:59:59"
+    "last_updated": "2026-11-15 04:54:05"
   }
 }
